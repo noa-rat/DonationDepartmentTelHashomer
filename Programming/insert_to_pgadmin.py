@@ -10,7 +10,7 @@ Base = declarative_base()
 
 # Define the Department table model
 class Department(Base):
-    __tablename__ = 'Department'
+    __tablename__ = 'department'
 
     d_name = Column(String, primary_key=True, nullable=False)
     d_email = Column(String, nullable=False)
