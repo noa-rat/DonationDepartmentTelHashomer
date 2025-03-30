@@ -1,0 +1,401 @@
+d_name,d_email,d_phone,d_funds_allocated,d_yearly_budget
+Gastroenterology and Emergency Center,gastroenterology_and_emergency_center@example.com,9082287968.0,108483,1567024
+Psychiatry and Surgery Unit,psychiatry_and_surgery_unit@example.com,5102013432.0,175085,1356629
+Infectious Diseases Clinic,infectious_diseases_clinic@example.com,1661697872.0,67537,1042211
+Ophthalmology and Obstetrics Division,ophthalmology_and_obstetrics_division@example.com,7607065740.0,163642,1356855
+Psychiatry and Ophthalmology Ward,psychiatry_and_ophthalmology_ward@example.com,3068815684.0,196385,1362545
+Urology Institute,urology_institute@example.com,8203528774.0,53440,1249844
+Psychiatry Clinic,psychiatry_clinic@example.com,3263126944.0,137469,1581041
+Immunology Ward,immunology_ward@example.com,6720179052.0,73195,544219
+Anesthesiology and Pediatrics Center,anesthesiology_and_pediatrics_center@example.com,6535119399.0,185787,1093830
+Neonatology Center,neonatology_center@example.com,1810939924.0,199095,1980406
+Neurology and Trauma Department,neurology_and_trauma_department@example.com,1279325164.0,197581,675088
+Hematology Center,hematology_center@example.com,4175923598.0,59598,692818
+Neonatology and Cardiology Ward,neonatology_and_cardiology_ward@example.com,6614638197.0,69742,1378735
+Neonatology and Urology Institute,neonatology_and_urology_institute@example.com,5129822209.0,119891,999848
+Orthopedics Department,orthopedics_department@example.com,2388198252.0,123529,936315
+Infectious Diseases Department,infectious_diseases_department@example.com,2383600833.0,153808,1407133
+Neurology and Rheumatology Division,neurology_and_rheumatology_division@example.com,9264286398.0,180176,1707813
+Infectious Diseases and Rheumatology Clinic,infectious_diseases_and_rheumatology_clinic@example.com,2103653455.0,116471,625153
+Neonatology and Pulmonology Department,neonatology_and_pulmonology_department@example.com,5680202432.0,100446,678217
+Neurology and Rehabilitation Division,neurology_and_rehabilitation_division@example.com,8253356872.0,91686,1104486
+Pediatrics Clinic,pediatrics_clinic@example.com,4930252350.0,126775,947362
+Pediatrics and Ophthalmology Division,pediatrics_and_ophthalmology_division@example.com,4263608670.0,70396,1105847
+Surgery Ward,surgery_ward@example.com,4085075201.0,156598,1393394
+Ophthalmology and Pediatrics Ward,ophthalmology_and_pediatrics_ward@example.com,5357848917.0,110920,1127588
+Obstetrics and Oncology Center,obstetrics_and_oncology_center@example.com,7929102753.0,174957,680689
+Hematology and Dermatology Department,hematology_and_dermatology_department@example.com,8543465729.0,161852,824234
+Gynecology and Pediatrics Institute,gynecology_and_pediatrics_institute@example.com,1033534725.0,95205,1793454
+Rheumatology and Pediatrics Department,rheumatology_and_pediatrics_department@example.com,9800876996.0,103003,1623858
+Hematology and Nephrology Unit,hematology_and_nephrology_unit@example.com,5744085354.0,189539,1394056
+Cardiology and Pediatrics Ward,cardiology_and_pediatrics_ward@example.com,5800726301.0,130665,771559
+Anesthesiology and Nephrology Division,anesthesiology_and_nephrology_division@example.com,7975264650.0,89615,1849811
+Anesthesiology and Dermatology Institute,anesthesiology_and_dermatology_institute@example.com,4992838294.0,156401,874009
+Obstetrics Division,obstetrics_division@example.com,8793419117.0,65021,1126274
+Hematology Ward,hematology_ward@example.com,3813729397.0,153100,1149892
+Anesthesiology and Gynecology Division,anesthesiology_and_gynecology_division@example.com,3204503122.0,118011,1032206
+Immunology and Trauma Division,immunology_and_trauma_division@example.com,8413078888.0,77965,660975
+Anesthesiology and Pediatrics Division,anesthesiology_and_pediatrics_division@example.com,1066166233.0,54761,914561
+Trauma and Neonatology Unit,trauma_and_neonatology_unit@example.com,9029216811.0,103924,650480
+Orthopedics and Urology Division,orthopedics_and_urology_division@example.com,9073423315.0,175122,1216070
+Endocrinology and Rehabilitation Clinic,endocrinology_and_rehabilitation_clinic@example.com,4766372483.0,162657,1414204
+Rheumatology Institute,rheumatology_institute@example.com,5916412228.0,123713,1727802
+Cardiology Division,cardiology_division@example.com,4044375038.0,60425,847846
+Rheumatology and Radiology Institute,rheumatology_and_radiology_institute@example.com,1180413381.0,81366,1699316
+Radiology and Pathology Institute,radiology_and_pathology_institute@example.com,5754634890.0,148003,1250922
+Gynecology Clinic,gynecology_clinic@example.com,5940185839.0,181275,1600808
+Obstetrics and Anesthesiology Unit,obstetrics_and_anesthesiology_unit@example.com,2871214863.0,137843,1167824
+Infectious Diseases and Orthopedics Center,infectious_diseases_and_orthopedics_center@example.com,3018275451.0,79563,978214
+Oncology Department,oncology_department@example.com,6473239228.0,98983,1227063
+Ophthalmology Department,ophthalmology_department@example.com,6697394526.0,182009,1262060
+Immunology and Anesthesiology Unit,immunology_and_anesthesiology_unit@example.com,4544645926.0,70762,1930217
+Neurology and Endocrinology Department,neurology_and_endocrinology_department@example.com,2670971863.0,115767,1069301
+Urology and Obstetrics Institute,urology_and_obstetrics_institute@example.com,9477681911.0,67304,1323667
+Hematology Institute,hematology_institute@example.com,7425560493.0,85999,1583786
+Immunology Institute,immunology_institute@example.com,2013132404.0,191707,1135600
+Orthopedics Unit,orthopedics_unit@example.com,7361868076.0,195150,1864647
+Trauma Clinic,trauma_clinic@example.com,1177712427.0,107336,1043844
+Neurology and Emergency Institute,neurology_and_emergency_institute@example.com,7591249741.0,131331,1654139
+Obstetrics and Ophthalmology Department,obstetrics_and_ophthalmology_department@example.com,9557481643.0,78836,550259
+Neurology Center,neurology_center@example.com,5309994035.0,176088,841508
+Trauma and Pulmonology Institute,trauma_and_pulmonology_institute@example.com,3713898179.0,167806,533383
+Emergency Division,emergency_division@example.com,8484780769.0,162569,1907667
+Obstetrics Ward,obstetrics_ward@example.com,5397099633.0,109623,1696538
+Surgery Clinic,surgery_clinic@example.com,9643223139.0,148035,1596156
+Gynecology Institute,gynecology_institute@example.com,9282567573.0,51006,1250375
+Neonatology and Pediatrics Division,neonatology_and_pediatrics_division@example.com,4136446913.0,156303,1949581
+Pediatrics Center,pediatrics_center@example.com,3178056131.0,191519,1275432
+Infectious Diseases and Surgery Department,infectious_diseases_and_surgery_department@example.com,6849550596.0,149725,1698373
+Radiology and Emergency Center,radiology_and_emergency_center@example.com,9201551705.0,71741,740034
+Neonatology and Psychiatry Clinic,neonatology_and_psychiatry_clinic@example.com,3095799705.0,130410,1636115
+Radiology Unit,radiology_unit@example.com,8935411098.0,66625,1670201
+Pulmonology and Radiology Clinic,pulmonology_and_radiology_clinic@example.com,7416291168.0,57361,1844280
+Gastroenterology and Infectious Diseases Institute,gastroenterology_and_infectious_diseases_institute@example.com,5200137813.0,140059,1115640
+Trauma and Dermatology Ward,trauma_and_dermatology_ward@example.com,5258588201.0,115328,1881855
+Nephrology Clinic,nephrology_clinic@example.com,5762760218.0,186580,1200779
+Obstetrics and Pulmonology Ward,obstetrics_and_pulmonology_ward@example.com,6025750769.0,115048,1997597
+Emergency Ward,emergency_ward@example.com,3933587130.0,59394,1726484
+Pathology Division,pathology_division@example.com,4297748085.0,55531,572153
+Rehabilitation and Endocrinology Clinic,rehabilitation_and_endocrinology_clinic@example.com,5199980767.0,176935,1963406
+Neonatology and Obstetrics Clinic,neonatology_and_obstetrics_clinic@example.com,4072106252.0,74025,903661
+Oncology and Ophthalmology Clinic,oncology_and_ophthalmology_clinic@example.com,8434269776.0,110053,1409054
+Pulmonology Institute,pulmonology_institute@example.com,9954908535.0,140880,1872426
+Surgery and Psychiatry Ward,surgery_and_psychiatry_ward@example.com,6786537118.0,125408,1554552
+Rheumatology and Pathology Department,rheumatology_and_pathology_department@example.com,2454542056.0,148504,1866151
+Pathology and Anesthesiology Department,pathology_and_anesthesiology_department@example.com,6882007229.0,86873,749233
+Immunology Department,immunology_department@example.com,7443828224.0,170652,986626
+Surgery Institute,surgery_institute@example.com,2742488158.0,102190,605920
+Nephrology Institute,nephrology_institute@example.com,8748375763.0,110182,1635433
+Neonatology and Hematology Institute,neonatology_and_hematology_institute@example.com,6286325176.0,163445,708372
+Anesthesiology Institute,anesthesiology_institute@example.com,9106770938.0,198484,1415077
+Urology Unit,urology_unit@example.com,6791595056.0,137675,1603502
+Urology and Rheumatology Division,urology_and_rheumatology_division@example.com,8936448171.0,62450,629237
+Rehabilitation and Infectious Diseases Unit,rehabilitation_and_infectious_diseases_unit@example.com,2033353505.0,134730,1479676
+Surgery Division,surgery_division@example.com,7093352600.0,50661,1993117
+Trauma and Anesthesiology Center,trauma_and_anesthesiology_center@example.com,1254853245.0,134220,1437127
+Oncology and Trauma Center,oncology_and_trauma_center@example.com,6913362274.0,189175,1151819
+Anesthesiology and Gastroenterology Department,anesthesiology_and_gastroenterology_department@example.com,4343467287.0,187404,649736
+Oncology and Emergency Center,oncology_and_emergency_center@example.com,3138494085.0,105570,1816791
+Pediatrics Ward,pediatrics_ward@example.com,5026132870.0,130899,1609488
+Rehabilitation Institute,rehabilitation_institute@example.com,7253868234.0,188183,1863776
+Anesthesiology and Trauma Institute,anesthesiology_and_trauma_institute@example.com,3225934259.0,167980,1386864
+Pediatrics and Obstetrics Ward,pediatricsandobstetricsward@example.com,849-851-0897x26807,159214,608244
+Oncology Unit,oncologyunit@example.com,001-548-883-0045x79097,159747,899438
+Rheumatology Department,rheumatologydepartment@example.com,388-767-7698x701,93879,1783210
+Psychiatry and Infectious Diseases Clinic,psychiatryandinfectiousdiseasesclinic@example.com,467.466.2320,104555,1105736
+Anesthesiology Ward,anesthesiologyward@example.com,526-527-9865,189566,1600245
+Obstetrics and Immunology Institute,obstetricsandimmunologyinstitute@example.com,+1-779-691-6346x54588,152687,1968948
+Pediatrics and Cardiology Ward,pediatricsandcardiologyward@example.com,6296760707,95653,1953682
+Pediatrics and Radiology Ward,pediatricsandradiologyward@example.com,+1-927-694-2402x0420,99759,1427225
+Hematology and Anesthesiology Department,hematologyandanesthesiologydepartment@example.com,737-530-2979x73070,119425,1245831
+Rheumatology Unit,rheumatologyunit@example.com,(476)818-3554,99180,1994472
+Pediatrics Institute,pediatricsinstitute@example.com,435-358-3172x02479,80086,623874
+Rehabilitation Ward,rehabilitationward@example.com,573-352-3932x39469,89430,1192182
+Radiology Institute,radiologyinstitute@example.com,765-757-9477x054,173857,1297135
+Ophthalmology Institute,ophthalmologyinstitute@example.com,(506)756-4702x76619,73354,1145788
+Gastroenterology and Rheumatology Department,gastroenterologyandrheumatologydepartment@example.com,984.276.1703x94226,172977,630396
+Infectious Diseases Ward,infectiousdiseasesward@example.com,317.696.2989,73463,1126371
+Infectious Diseases Division,infectiousdiseasesdivision@example.com,450.566.7432x0843,108797,906910
+Trauma Department,traumadepartment@example.com,975-818-9814x38264,121467,998587
+Oncology Center,oncologycenter@example.com,+1-906-877-8824x3068,175658,1372178
+Cardiology Department,cardiologydepartment@example.com,453-788-1041x1216,164177,1461310
+Radiology and Infectious Diseases Unit,radiologyandinfectiousdiseasesunit@example.com,529.961.5190x088,61773,1465253
+Endocrinology Clinic,endocrinologyclinic@example.com,5999650902,60919,1795968
+Trauma and Dermatology Center,traumaanddermatologycenter@example.com,(382)687-8986x96720,141575,1841765
+Immunology and Endocrinology Department,immunologyandendocrinologydepartment@example.com,(780)604-9443x614,154682,990084
+Immunology and Ophthalmology Unit,immunologyandophthalmologyunit@example.com,269.439.4625x36992,132051,1010562
+Infectious Diseases Unit,infectiousdiseasesunit@example.com,9549325174,192757,1984358
+Urology Ward,urologyward@example.com,663-341-2063,50808,1407469
+Immunology Unit,immunologyunit@example.com,343.277.9836,176359,1933570
+Oncology and Orthopedics Unit,oncologyandorthopedicsunit@example.com,561.663.8061,113992,600145
+Pulmonology Division,pulmonologydivision@example.com,+1-271-741-7358x976,129088,607967
+Oncology Institute,oncologyinstitute@example.com,731-453-3644x2312,89476,1463009
+Gynecology Center,gynecologycenter@example.com,423-442-8822,78841,1243263
+Rheumatology and Dermatology Ward,rheumatologyanddermatologyward@example.com,759-532-8536x761,104872,1920394
+Endocrinology and Nephrology Center,endocrinologyandnephrologycenter@example.com,(491)793-9993,87125,1553386
+Psychiatry and Nephrology Department,psychiatryandnephrologydepartment@example.com,616-826-7897,133951,1135371
+Anesthesiology and Urology Division,anesthesiologyandurologydivision@example.com,(272)726-7898,97108,851192
+Obstetrics Department,obstetricsdepartment@example.com,599-826-4853x694,53168,977198
+Orthopedics and Pediatrics Center,orthopedicsandpediatricscenter@example.com,(700)297-3706x360,88821,564129
+Cardiology and Hematology Clinic,cardiologyandhematologyclinic@example.com,001-648-208-3506x336,118228,968771
+Pathology and Orthopedics Unit,pathologyandorthopedicsunit@example.com,(561)582-8717,192078,1394203
+Oncology and Radiology Unit,oncologyandradiologyunit@example.com,001-287-868-7974,115177,712278
+Pediatrics and Dermatology Division,pediatricsanddermatologydivision@example.com,+1-848-376-3230,192578,1231545
+Orthopedics and Neonatology Clinic,orthopedicsandneonatologyclinic@example.com,001-610-275-3601,151143,1893920
+Infectious Diseases and Hematology Center,infectiousdiseasesandhematologycenter@example.com,994.810.6698x3363,70699,1762359
+Rheumatology and Orthopedics Unit,rheumatologyandorthopedicsunit@example.com,001-493-510-8004,54289,1758155
+Rheumatology Division,rheumatologydivision@example.com,(716)226-4484,54326,1602012
+Endocrinology and Ophthalmology Division,endocrinologyandophthalmologydivision@example.com,001-894-205-0107,112508,891857
+Orthopedics and Infectious Diseases Department,orthopedicsandinfectiousdiseasesdepartment@example.com,(365)223-8354x22087,83004,671894
+Emergency and Pediatrics Unit,emergencyandpediatricsunit@example.com,+1-219-799-7301x69652,155108,1328968
+Hematology and Cardiology Clinic,hematologyandcardiologyclinic@example.com,(819)367-3068x09123,138654,558028
+Pediatrics and Nephrology Ward,pediatricsandnephrologyward@example.com,+1-969-611-7972,93030,1328772
+Radiology and Rehabilitation Department,radiologyandrehabilitationdepartment@example.com,357-761-2434x320,166100,862674
+Orthopedics and Rehabilitation Ward,orthopedicsandrehabilitationward@example.com,836-424-6576x8587,185474,645693
+Emergency and Cardiology Clinic,emergencyandcardiologyclinic@example.com,+1-482-969-8907x01607,136914,1015801
+Ophthalmology and Pathology Unit,ophthalmologyandpathologyunit@example.com,528-967-7950x00130,65198,1831658
+Neonatology Unit,neonatologyunit@example.com,001-895-942-6808,192134,581359
+Immunology and Radiology Department,immunologyandradiologydepartment@example.com,8439285626,182419,859804
+Nephrology Unit,nephrologyunit@example.com,466-989-7011,166843,642165
+Neonatology and Infectious Diseases Ward,neonatologyandinfectiousdiseasesward@example.com,(481)985-0380x98641,165432,597165
+Urology and Gynecology Unit,urologyandgynecologyunit@example.com,+1-945-428-0986x2690,122870,582947
+Gynecology and Neurology Clinic,gynecologyandneurologyclinic@example.com,+1-207-640-9153x16794,146618,1488078
+Ophthalmology Clinic,ophthalmologyclinic@example.com,7469072536,115356,1155021
+Immunology and Endocrinology Center,immunologyandendocrinologycenter@example.com,790-547-3626x83108,118371,967664
+Neurology and Radiology Institute,neurologyandradiologyinstitute@example.com,976-348-8476,93767,1701579
+Neurology and Urology Department,neurologyandurologydepartment@example.com,(289)426-9644x576,160724,1624285
+Obstetrics and Immunology Division,obstetricsandimmunologydivision@example.com,001-688-935-8840x987,55104,1461325
+Anesthesiology Clinic,anesthesiologyclinic@example.com,001-293-438-5124x27224,67585,820071
+Radiology Ward,radiologyward@example.com,(774)490-0236x592,79358,747616
+Pediatrics and Neurology Department,pediatricsandneurologydepartment@example.com,(754)234-4245x127,134614,1429836
+Radiology Department,radiologydepartment@example.com,001-415-346-7978x828,63178,830750
+Ophthalmology and Psychiatry Unit,ophthalmologyandpsychiatryunit@example.com,590.391.4349x006,180486,831815
+Gastroenterology Division,gastroenterologydivision@example.com,6994497691,167449,702083
+Neurology and Pediatrics Ward,neurologyandpediatricsward@example.com,7856133625,89950,1381998
+Dermatology Center,dermatologycenter@example.com,8912798514,118216,1629657
+Immunology and Rehabilitation Clinic,immunologyandrehabilitationclinic@example.com,001-388-543-2536,112892,1006671
+Gastroenterology and Rheumatology Clinic,gastroenterologyandrheumatologyclinic@example.com,001-950-739-6442x0571,87087,585317
+Pathology Institute,pathologyinstitute@example.com,+1-382-927-5871,136451,1883510
+Urology and Gastroenterology Division,urologyandgastroenterologydivision@example.com,+1-377-484-7222x1456,156080,1093117
+Pulmonology and Nephrology Center,pulmonologyandnephrologycenter@example.com,+1-270-309-5450x5788,153271,688521
+Gynecology and Infectious Diseases Division,gynecologyandinfectiousdiseasesdivision@example.com,676.405.6418,77164,1581220
+Radiology and Neurology Unit,radiologyandneurologyunit@example.com,(925)575-7938x37444,120166,792550
+Immunology and Trauma Clinic,immunologyandtraumaclinic@example.com,485.394.3979x8295,91356,1685585
+Ophthalmology and Endocrinology Institute,ophthalmologyandendocrinologyinstitute@example.com,001-201-652-8075x123,125890,1151273
+Dermatology and Neonatology Clinic,dermatologyandneonatologyclinic@example.com,+1-254-302-9862x9352,130619,1788336
+Obstetrics and Psychiatry Division,obstetricsandpsychiatrydivision@example.com,304.664.5939x8027,105094,1889456
+Pulmonology and Neurology Center,pulmonologyandneurologycenter@example.com,283.436.8717,101465,1687131
+Anesthesiology and Emergency Division,anesthesiologyandemergencydivision@example.com,577-333-8134,112690,586042
+Emergency and Orthopedics Center,emergencyandorthopedicscenter@example.com,352.238.3577,189099,1928385
+Gynecology and Pediatrics Unit,gynecologyandpediatricsunit@example.com,649.360.2810,59299,1982386
+Gastroenterology and Emergency Department,gastroenterologyandemergencydepartment@example.com,(848)987-9126x3184,195515,824177
+Emergency and Psychiatry Division,emergencyandpsychiatrydivision@example.com,+1-257-939-0603,110477,1085639
+Ophthalmology and Obstetrics Institute,ophthalmologyandobstetricsinstitute@example.com,+1-245-754-2129x15150,151236,1033806
+Immunology Clinic,immunologyclinic@example.com,(299)934-6030,96185,742826
+Dermatology Department,dermatologydepartment@example.com,8863551419,195363,1756167
+Hematology and Oncology Clinic,hematologyandoncologyclinic@example.com,+1-285-805-5949x846,193182,1145527
+Urology and Pulmonology Department,urologyandpulmonologydepartment@example.com,734-703-9875,149270,1310113
+Endocrinology and Pathology Division,endocrinologyandpathologydivision@example.com,(846)677-2292x285,180032,1551216
+Gynecology Department,gynecologydepartment@example.com,+1-661-473-0620,176635,1390890
+Infectious Diseases Institute,infectiousdiseasesinstitute@example.com,763.702.6110x77145,165283,507319
+Rehabilitation and Trauma Unit,rehabilitationandtraumaunit@example.com,(221)317-8769x654,176900,1445994
+Endocrinology Unit,endocrinologyunit@example.com,789-787-6006x065,164541,1415466
+Rheumatology and Gastroenterology Clinic,rheumatologyandgastroenterologyclinic@example.com,623.298.0316x15221,53974,1691017
+Pulmonology and Gastroenterology Department,pulmonologyandgastroenterologydepartment@example.com,960-765-4653,176953,1508402
+Hematology and Urology Department,hematologyandurologydepartment@example.com,7108685095,120363,634529
+Cardiology Institute,cardiologyinstitute@example.com,001-666-367-0440,67323,1019582
+Pediatrics Division,pediatricsdivision@example.com,+1-867-588-9615x464,123532,1920273
+Dermatology and Pediatrics Clinic,dermatologyandpediatricsclinic@example.com,921-984-1321x9207,80504,1492587
+Neurology and Emergency Division,neurologyandemergencydivision@example.com,001-599-866-6771x80602,177984,1540468
+Radiology Division,radiologydivision@example.com,+1-547-522-2179x14393,105064,905071
+Infectious Diseases and Urology Institute,infectiousdiseasesandurologyinstitute@example.com,+1-984-998-4698x76193,149976,1639694
+Surgery and Radiology Department,surgeryandradiologydepartment@example.com,5025875760,137523,1760382
+Orthopedics and Obstetrics Institute,orthopedicsandobstetricsinstitute@example.com,+1-598-337-5309,122966,716642
+Urology Center,urologycenter@example.com,001-475-682-9469x57150,161015,569726
+Pathology and Pulmonology Clinic,pathologyandpulmonologyclinic@example.com,+1-603-729-2219x78063,66322,1793650
+Orthopedics and Nephrology Ward,orthopedicsandnephrologyward@example.com,2987549404,158419,1450976
+Pathology Unit,pathologyunit@example.com,329-687-1010,108377,1880383
+Pathology and Neurology Department,pathologyandneurologydepartment@example.com,2745407969,144819,1414314
+Rheumatology and Gynecology Division,rheumatologyandgynecologydivision@example.com,8308060330,180357,683356
+Anesthesiology Division,anesthesiologydivision@example.com,259.224.0516,65957,1806866
+Orthopedics Center,orthopedicscenter@example.com,305.886.1903x9626,127699,962037
+Emergency Clinic,emergencyclinic@example.com,724.325.3067x71492,86311,1153849
+Trauma and Nephrology Unit,traumaandnephrologyunit@example.com,(598)991-8146,104248,889926
+Neonatology Ward,neonatologyward@example.com,(440)268-1203x0201,93194,1325500
+Cardiology Unit,cardiologyunit@example.com,(344)211-7402x61963,59390,1391122
+Neurology and Cardiology Clinic,neurologyandcardiologyclinic@example.com,(360)881-0177,54857,996615
+Pathology and Dermatology Unit,pathologyanddermatologyunit@example.com,001-353-891-0986x6317,186372,1513754
+Surgery and Pulmonology Center,surgeryandpulmonologycenter@example.com,4699858859,169144,1274876
+Hematology Unit,hematologyunit@example.com,339-225-4433,138107,1255636
+Obstetrics Clinic,obstetricsclinic@example.com,204.942.4737x80422,184176,1838961
+Pediatrics and Immunology Division,pediatricsandimmunologydivision@example.com,240-519-7333,153880,775582
+Gastroenterology Department,gastroenterologydepartment@example.com,9332389183,156390,686157
+Psychiatry Ward,psychiatryward@example.com,969-732-4685x863,98036,922201
+Cardiology Ward,cardiologyward@example.com,893.219.3664,185121,1545108
+Neurology and Gynecology Division,neurologyandgynecologydivision@example.com,(910)368-4047x32139,59112,1262931
+Urology Clinic,urologyclinic@example.com,965.505.2912x350,151543,1148712
+Psychiatry Center,psychiatrycenter@example.com,001-889-282-6393x4294,170881,1125026
+Endocrinology Institute,endocrinologyinstitute@example.com,438-346-8078x9922,112817,1591880
+Rheumatology and Emergency Center,rheumatologyandemergencycenter@example.com,001-224-264-8690x54464,144988,738399
+Oncology and Infectious Diseases Institute,oncologyandinfectiousdiseasesinstitute@example.com,984.519.1805,168130,1018942
+Anesthesiology and Emergency Clinic,anesthesiologyandemergencyclinic@example.com,+1-897-330-6124x101,134798,869518
+Neonatology Division,neonatologydivision@example.com,(926)974-2717,157330,1491098
+Rheumatology and Dermatology Institute,rheumatologyanddermatologyinstitute@example.com,496.925.9232,56697,1582496
+Orthopedics and Trauma Institute,orthopedicsandtraumainstitute@example.com,(755)837-7680x35320,80724,610719
+Pediatrics and Pathology Institute,pediatricsandpathologyinstitute@example.com,001-516-949-8726x52242,190400,565980
+Hematology and Ophthalmology Clinic,hematologyandophthalmologyclinic@example.com,824-366-8966,51336,1981462
+Hematology and Infectious Diseases Center,hematologyandinfectiousdiseasescenter@example.com,912-891-0122,56814,1883161
+Anesthesiology and Gastroenterology Ward,anesthesiologyandgastroenterologyward@example.com,8266989010,184752,1699834
+Psychiatry and Rheumatology Division,psychiatryandrheumatologydivision@example.com,707-253-2377x549,80091,537623
+Pathology and Immunology Division,pathologyandimmunologydivision@example.com,(636)369-6172,152646,696425
+Gastroenterology Clinic,gastroenterologyclinic@example.com,501.878.3031,97526,830235
+Oncology and Neonatology Center,oncologyandneonatologycenter@example.com,001-964-619-8352x874,58515,1715902
+Trauma Ward,traumaward@example.com,001-641-947-6917,68501,1895376
+Oncology and Cardiology Center,oncologyandcardiologycenter@example.com,9344526557,114674,1439759
+Neonatology and Pathology Center,neonatologyandpathologycenter@example.com,(998)810-3567x879,119442,1154024
+Pediatrics and Emergency Division,pediatricsandemergencydivision@example.com,854-449-4037,139583,670846
+Psychiatry Institute,psychiatryinstitute@example.com,(748)967-6476,64874,873998
+Dermatology Clinic,dermatologyclinic@example.com,700.257.7674,76222,549046
+Pulmonology Unit,pulmonologyunit@example.com,770-236-4631x839,66667,1795810
+Surgery and Neonatology Department,surgeryandneonatologydepartment@example.com,974.901.3917x71710,179069,1051644
+Trauma and Oncology Department,traumaandoncologydepartment@example.com,258.749.4972,155796,550745
+Dermatology and Surgery Ward,dermatologyandsurgeryward@example.com,+1-208-205-2716x908,182712,1901330
+Ophthalmology and Emergency Department,ophthalmologyandemergencydepartment@example.com,(395)207-4876,164096,912253
+Cardiology and Gynecology Department,cardiologyandgynecologydepartment@example.com,214.840.0459x1376,91203,1457950
+Gastroenterology and Hematology Ward,gastroenterologyandhematologyward@example.com,303-497-1847,160506,907734
+Surgery Center,surgerycenter@example.com,(945)462-6365,67069,916114
+Emergency and Trauma Center,emergencyandtraumacenter@example.com,551.841.3535,183819,1917322
+Trauma Division,traumadivision@example.com,888.921.8316x959,50950,825151
+Neurology and Gastroenterology Department,neurologyandgastroenterologydepartment@example.com,909.222.0401x18173,64873,1794742
+Ophthalmology and Infectious Diseases Unit,ophthalmologyandinfectiousdiseasesunit@example.com,001-883-984-6124x7986,64230,535405
+Pulmonology and Immunology Institute,pulmonologyandimmunologyinstitute@example.com,001-783-411-6620x7810,172191,975843
+Rheumatology Clinic,rheumatologyclinic@example.com,916-846-0657x7832,77099,1104607
+Radiology and Gynecology Department,radiologyandgynecologydepartment@example.com,320.489.5222x1114,90685,1766810
+Neonatology and Pediatrics Center,neonatologyandpediatricscenter@example.com,608-236-5232x237,154606,1164463
+Neurology and Neonatology Center,neurologyandneonatologycenter@example.com,+1-658-568-5193x84577,69024,1130233
+Rehabilitation Division,rehabilitationdivision@example.com,681.953.5215x68602,139660,525859
+Hematology and Cardiology Ward,hematologyandcardiologyward@example.com,(611)420-2898,165807,1262217
+Neurology and Pathology Division,neurologyandpathologydivision@example.com,(240)880-0761x809,180239,1958499
+Ophthalmology and Emergency Center,ophthalmologyandemergencycenter@example.com,(462)851-8672x6362,98567,1361381
+Trauma Unit,traumaunit@example.com,(809)370-6185,151046,1261681
+Neurology and Urology Clinic,neurologyandurologyclinic@example.com,001-256-392-5534x6901,110806,1452275
+Endocrinology Ward,endocrinologyward@example.com,+1-953-432-7823x6617,194858,1956736
+Dermatology Institute,dermatologyinstitute@example.com,6619566825,150820,1625102
+Nephrology and Pathology Clinic,nephrologyandpathologyclinic@example.com,2959645072,191554,1561110
+Hematology and Nephrology Institute,hematologyandnephrologyinstitute@example.com,+1-564-842-5150x535,154109,1758223
+Dermatology and Pathology Unit,dermatologyandpathologyunit@example.com,600-594-2586,185254,1863277
+Trauma and Surgery Division,traumaandsurgerydivision@example.com,+1-773-493-8824x0720,150074,588050
+Orthopedics and Ophthalmology Center,orthopedicsandophthalmologycenter@example.com,3773365489,105407,1469273
+Cardiology Center,cardiologycenter@example.com,208.421.8696x296,123890,1427311
+Pathology and Trauma Unit,pathologyandtraumaunit@example.com,(949)704-6318x147,159350,1285963
+Gastroenterology and Emergency Clinic,gastroenterologyandemergencyclinic@example.com,7907031666,197545,1819804
+Gynecology and Anesthesiology Unit,gynecologyandanesthesiologyunit@example.com,419-548-9744,138366,1865627
+Trauma and Infectious Diseases Center,traumaandinfectiousdiseasescenter@example.com,981.354.9736x0525,172860,1491334
+Infectious Diseases and Rehabilitation Institute,infectiousdiseasesandrehabilitationinstitute@example.com,878-353-9645x037,195487,918497
+Surgery and Dermatology Ward,surgeryanddermatologyward@example.com,+1-787-895-8552x852,171779,1280652
+Rehabilitation and Hematology Unit,rehabilitationandhematologyunit@example.com,794.394.9419x88535,156280,1737926
+Cardiology and Ophthalmology Clinic,cardiologyandophthalmologyclinic@example.com,740.763.4593,63809,928719
+Cardiology and Endocrinology Ward,cardiologyandendocrinologyward@example.com,336.864.3724,59293,1787574
+Dermatology Division,dermatologydivision@example.com,955-510-2907x41501,145762,590115
+Psychiatry and Dermatology Clinic,psychiatryanddermatologyclinic@example.com,(223)935-9532x593,54397,525629
+Rehabilitation and Gastroenterology Ward,rehabilitationandgastroenterologyward@example.com,251.378.3506,107809,1839129
+Anesthesiology and Trauma Center,anesthesiologyandtraumacenter@example.com,242.392.3952x408,74687,1419951
+Neurology Department,neurologydepartment@example.com,(464)777-8743,94481,644688
+Gastroenterology and Surgery Ward,gastroenterologyandsurgeryward@example.com,642-966-8865,76538,1139580
+Nephrology Department,nephrologydepartment@example.com,001-243-296-2103x8266,171426,1569827
+Pathology and Neurology Unit,pathologyandneurologyunit@example.com,+1-641-610-5720x90557,107884,1627875
+Immunology and Cardiology Ward,immunologyandcardiologyward@example.com,811-663-0410,71558,641725
+Cardiology and Emergency Unit,cardiologyandemergencyunit@example.com,576-435-6883x8572,89399,1086503
+Radiology and Cardiology Ward,radiologyandcardiologyward@example.com,(897)741-4108,100698,1011278
+Pulmonology Ward,pulmonologyward@example.com,+1-221-688-7125,161839,756480
+Pathology and Rehabilitation Division,pathologyandrehabilitationdivision@example.com,001-373-289-4176x5722,115423,1036404
+Urology and Gastroenterology Clinic,urologyandgastroenterologyclinic@example.com,+1-531-306-0447x88344,118001,1248784
+Gastroenterology Center,gastroenterologycenter@example.com,+1-253-932-7928,174737,1676245
+Emergency and Oncology Division,emergencyandoncologydivision@example.com,001-479-376-2718x3897,145113,533029
+Ophthalmology and Hematology Unit,ophthalmologyandhematologyunit@example.com,490.832.2487,87844,804136
+Psychiatry Department,psychiatrydepartment@example.com,789-751-5719,131721,1727983
+Rehabilitation and Gastroenterology Unit,rehabilitationandgastroenterologyunit@example.com,(213)981-9715x65524,192375,1503768
+Pediatrics and Oncology Clinic,pediatricsandoncologyclinic@example.com,001-611-978-6494x4043,97022,533372
+Ophthalmology and Anesthesiology Department,ophthalmologyandanesthesiologydepartment@example.com,001-734-309-3245,53313,1663933
+Pathology and Emergency Department,pathologyandemergencydepartment@example.com,868-417-2753x40748,103491,777159
+Trauma Center,traumacenter@example.com,+1-339-508-0458,142181,1394949
+Oncology Clinic,oncologyclinic@example.com,001-705-829-3174,50927,1378985
+Gynecology and Surgery Center,gynecologyandsurgerycenter@example.com,001-831-321-8898x0641,148458,958780
+Emergency and Surgery Clinic,emergencyandsurgeryclinic@example.com,489-745-5471x41509,184595,971103
+Immunology and Neonatology Center,immunologyandneonatologycenter@example.com,846-875-6957x8974,165958,979822
+Radiology and Hematology Division,radiologyandhematologydivision@example.com,854.431.6417,102076,1001755
+Cardiology and Psychiatry Center,cardiologyandpsychiatrycenter@example.com,623-585-8042,101370,810034
+Ophthalmology Center,ophthalmologycenter@example.com,832.789.0113,72936,1705302
+Rehabilitation Center,rehabilitationcenter@example.com,660-619-5970,57764,1884125
+Gynecology and Psychiatry Institute,gynecologyandpsychiatryinstitute@example.com,001-575-874-6279x98337,84257,1198279
+Radiology Clinic,radiologyclinic@example.com,+1-745-403-8045,70806,658743
+Dermatology and Neurology Center,dermatologyandneurologycenter@example.com,491-818-9313x568,113430,1068726
+Rheumatology and Rehabilitation Institute,rheumatologyandrehabilitationinstitute@example.com,9544366009,90945,992492
+Psychiatry Unit,psychiatryunit@example.com,001-897-210-0922x068,151715,1346182
+Infectious Diseases and Cardiology Division,infectiousdiseasesandcardiologydivision@example.com,+1-544-598-6405,184012,622719
+Ophthalmology and Urology Department,ophthalmologyandurologydepartment@example.com,001-638-257-4187x9345,59390,1344496
+Emergency and Radiology Ward,emergencyandradiologyward@example.com,7803015227,140904,1380865
+Infectious Diseases Center,infectiousdiseasescenter@example.com,8765267358,108875,1911354
+Obstetrics and Rheumatology Institute,obstetricsandrheumatologyinstitute@example.com,001-548-939-3818x08612,129178,680917
+Anesthesiology and Cardiology Division,anesthesiologyandcardiologydivision@example.com,212-932-3762,85513,1656328
+Urology and Immunology Center,urologyandimmunologycenter@example.com,+1-846-518-1993x6099,65090,784249
+Immunology Division,immunologydivision@example.com,5135946388,162413,1677234
+Anesthesiology and Nephrology Center,anesthesiologyandnephrologycenter@example.com,001-726-479-5240x4893,199881,1560186
+Hematology Division,hematologydivision@example.com,001-804-687-2111x532,51955,1605356
+Oncology and Pulmonology Unit,oncologyandpulmonologyunit@example.com,227.897.9252,53360,1705806
+Immunology and Urology Ward,immunologyandurologyward@example.com,+1-426-563-8617x510,112536,1383909
+Rheumatology and Emergency Institute,rheumatologyandemergencyinstitute@example.com,(774)296-9216,136080,1673064
+Obstetrics Center,obstetricscenter@example.com,307.865.3493,165438,1451605
+Pulmonology and Psychiatry Ward,pulmonologyandpsychiatryward@example.com,(520)266-4242,97469,1061541
+Trauma and Anesthesiology Clinic,traumaandanesthesiologyclinic@example.com,+1-602-661-6918x40485,175938,579935
+Anesthesiology and Nephrology Institute,anesthesiologyandnephrologyinstitute@example.com,2494320584,88846,919853
+Gastroenterology and Emergency Unit,gastroenterologyandemergencyunit@example.com,001-938-684-1346x265,197418,1111556
+Dermatology and Infectious Diseases Clinic,dermatologyandinfectiousdiseasesclinic@example.com,(846)725-7311x40655,59504,1029323
+Anesthesiology Center,anesthesiologycenter@example.com,001-880-448-0763x75836,142926,693383
+Psychiatry Division,psychiatrydivision@example.com,258.324.1225x038,120848,1695199
+Radiology and Ophthalmology Ward,radiologyandophthalmologyward@example.com,(951)318-4778x01597,157409,836168
+Radiology and Surgery Department,radiologyandsurgerydepartment@example.com,(608)372-5975,83991,1219734
+Endocrinology Center,endocrinologycenter@example.com,859.282.2790,111446,1774680
+Infectious Diseases and Hematology Ward,infectiousdiseasesandhematologyward@example.com,001-596-886-2510,52147,573480
+Pediatrics and Oncology Center,pediatricsandoncologycenter@example.com,813-411-5115x862,178138,713304
+Radiology and Ophthalmology Unit,radiologyandophthalmologyunit@example.com,262-494-6905x084,113560,1646159
+Pathology and Neonatology Clinic,pathologyandneonatologyclinic@example.com,+1-260-597-5818,96537,1818737
+Orthopedics and Endocrinology Institute,orthopedicsandendocrinologyinstitute@example.com,854.284.4730x131,153135,704384
+Oncology and Neonatology Clinic,oncologyandneonatologyclinic@example.com,+1-582-305-3445x4209,169534,534312
+Neonatology and Ophthalmology Institute,neonatologyandophthalmologyinstitute@example.com,280-244-3375x55356,109223,1326618
+Neurology Unit,neurologyunit@example.com,697-843-4484x9869,64349,958322
+Orthopedics Division,orthopedicsdivision@example.com,001-664-733-9557x2871,149151,690365
+Surgery and Gynecology Division,surgeryandgynecologydivision@example.com,6817090565,61580,1802448
+Dermatology Unit,dermatologyunit@example.com,6877467506,139863,829547
+Obstetrics and Urology Division,obstetricsandurologydivision@example.com,001-717-904-5426x31692,63190,1802608
+Pediatrics and Hematology Center,pediatricsandhematologycenter@example.com,+1-807-578-2782x2934,184185,1481868
+Dermatology and Rehabilitation Department,dermatologyandrehabilitationdepartment@example.com,+1-277-949-5146x57081,67114,1726562
+Hematology and Oncology Division,hematologyandoncologydivision@example.com,(955)640-0916x72323,161199,1447091
+Obstetrics Unit,obstetricsunit@example.com,+1-869-365-0737x565,93324,1167091
+Rheumatology and Gynecology Department,rheumatologyandgynecologydepartment@example.com,5036522825,76614,503803
+Anesthesiology Department,anesthesiologydepartment@example.com,642.786.7673x8843,136876,1126963
+Pathology Ward,pathologyward@example.com,356.927.5073,72135,1808411
+Gastroenterology and Trauma Unit,gastroenterologyandtraumaunit@example.com,001-614-660-5039,120353,1023240
+Neonatology and Pathology Department,neonatologyandpathologydepartment@example.com,501-866-3949x5773,146179,1207063
+Gynecology Division,gynecologydivision@example.com,405.342.5699x14664,79087,1605994
+Immunology and Neonatology Ward,immunologyandneonatologyward@example.com,850-669-1043,53939,1093576
+Anesthesiology Unit,anesthesiologyunit@example.com,844-800-0907x65243,193845,889808
+Pediatrics and Trauma Center,pediatricsandtraumacenter@example.com,864-947-3780x1826,74994,857871
+Pathology and Oncology Department,pathologyandoncologydepartment@example.com,001-567-438-0522,100892,517935
+Infectious Diseases and Pulmonology Unit,infectiousdiseasesandpulmonologyunit@example.com,(287)314-8858x644,118642,913467
+Ophthalmology Ward,ophthalmologyward@example.com,+1-213-691-7741,123157,1971958
+Trauma and Urology Center,traumaandurologycenter@example.com,(956)619-4354x380,125337,1861426
+Rheumatology and Psychiatry Institute,rheumatologyandpsychiatryinstitute@example.com,001-243-675-9750x9056,143376,548988
+Obstetrics and Ophthalmology Division,obstetricsandophthalmologydivision@example.com,(733)995-9022x0939,181850,1160548
+Surgery and Psychiatry Center,surgeryandpsychiatrycenter@example.com,(296)438-3037,145588,564387
+Rheumatology and Pathology Center,rheumatologyandpathologycenter@example.com,5369923933,96517,918287
+Emergency and Urology Institute,emergencyandurologyinstitute@example.com,957.726.2271,123218,1977519
+Dermatology and Neurology Division,dermatologyandneurologydivision@example.com,(642)265-9640x32836,169785,1156471
+Gastroenterology Unit,gastroenterologyunit@example.com,001-775-380-3996x28553,117049,751826
+Anesthesiology and Neonatology Institute,anesthesiologyandneonatologyinstitute@example.com,685-865-6262,140799,1706190
+Pulmonology and Gynecology Ward,pulmonologyandgynecologyward@example.com,(371)587-1512x862,187477,1629693
+Oncology Division,oncologydivision@example.com,(952)500-0841x25095,157539,1764464
+Immunology and Emergency Institute,immunologyandemergencyinstitute@example.com,502-817-9235x0754,78192,1664873
+Anesthesiology and Hematology Clinic,anesthesiologyandhematologyclinic@example.com,001-835-596-5809x24183,152638,1959567
+Gastroenterology and Nephrology Unit,gastroenterologyandnephrologyunit@example.com,(397)844-3629x5899,53304,1944036
+Pediatrics and Pathology Division,pediatricsandpathologydivision@example.com,332-626-5180x8960,174955,1943506
