@@ -12,7 +12,7 @@
 3. [דיאגרמת ה-DSD](#דיאגרמת-ה-DSD)
 4. [הכנסת נתונים מקבצים](#הכנסת-נתונים-מקבצים)
 5. [הכנסת נתונים מ-mockaroo](#הכנסת-נתונים-מ-mockaroo)
-6. [הכנסת נתונים בדרך שלישית](#הכנסת-נתונים-בדרך-שלישית)
+6. [הכנסת נתונים עם python](#הכנסת-נתונים-עם-python)
 7. [גיבוי ושחזור נתונים](#גיבוי-ושחזור-נתונים)
    
 ## תיאור כללי
@@ -26,18 +26,19 @@
 - **מחלקות (Departments)** – מחלקות בית החולים הנהנות מהתרומות, כגון אונקולוגיה, ילדים, שיקום ועוד. לכל מחלקה יש יעד גיוס תרומות שנתי.
 
 ## דיאגרמת ה-ERD
-
+![ERD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/ERD.png)
 
 ## דיאגרמת ה-DSD
+![DSD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/RelationalSchema.png)
 
 
 ## הכנסת נתונים מקבצים
-
+![csv](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/WhatsApp%20Image%202025-03-30%20at%2011.46.19_c11728f2%20(1).jpg)
 
 ## הכנסת נתונים מ-mockaroo
+![mocaroo](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/mockarooFiles/Donations_Mockaroo.jpg)
 
-
-## הכנסת נתונים בדרך שלישית
-
+## הכנסת נתונים עם python
+![python](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/Programming/insert_to_pgadmin_output.jpg)
 
 ## גיבוי ושחזור נתונים
