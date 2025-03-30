@@ -42,3 +42,4 @@
 ![python](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/Programming/insert_to_pgadmin_output.jpg)
 
 ## גיבוי ושחזור נתונים
+![גיבוי](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-03-30%20154727.png)
