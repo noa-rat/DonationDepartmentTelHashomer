@@ -38,8 +38,8 @@
 
 ## שאילתא 5
 **תיאור:** מציג לכל איש צוות את מספר התורמים שהביא לאירועים, כמה מהם תרמו בפועל, ואת שיעור ההצלחה באחוזים.
-![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_4_0.png)
-![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_4.png)
+![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_5_0.png)
+![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_5.png)
 
 ## שאילתא 6
 **תיאור:** תורמים שתרמו יותר לפרויקטים מאשר למחלקות ממוין לפי גובה סכום התרומות לפרויקטים.
