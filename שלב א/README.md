@@ -34,7 +34,7 @@
 
 
 ## הכנסת נתונים מקבצים
-![csv](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/WhatsApp%20Image%202025-03-30%20at%2011.46.19_c11728f2%20(1).jpg)
+![csv](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/inset_from_csv.jpg)
 
 ## הכנסת נתונים מ-mockaroo
 ![mocaroo](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/mockarooFiles/Donations_Mockaroo.jpg)
