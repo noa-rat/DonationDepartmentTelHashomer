@@ -8,42 +8,66 @@
 
 ## תוכן העניינים
 1. [תיאור כללי](#תיאור-כללי)
-2. [דיאגרמת ה-ERD](#דיאגרמת-ה-ERD)
-3. [דיאגרמת ה-DSD](#דיאגרמת-ה-DSD)
-4. [הכנסת נתונים מקבצים](#הכנסת-נתונים-מקבצים)
-5. [הכנסת נתונים מ-mockaroo](#הכנסת-נתונים-מ-mockaroo)
-6. [הכנסת נתונים עם python](#הכנסת-נתונים-עם-python)
-7. [גיבוי נתונים](#גיבוי-נתונים)
-8. [שחזור נתונים](#שחזור-נתונים)
+2. [שאילתא 1](#שאילתא-1)
+3. [שאילתא 2](#שאילתא-2)
+4. [שאילתא 3](#שאילתא-3)
+5. [שאילתא 4](#שאילתא-4)
+6. [שאילתא 5](#שאילתא-5)
+7. [שאילתא 6](#שאילתא-6)
+8. [שאילתא 7](#שאילתא-7)
+9. [שאילתא 8](#שאילתא-8)
+10. [מחיקה 1](#מחיקה-1)
+11. [מחיקה 2](#מחיקה-2)
+12. [מחיקה 3](#מחיקה-3)
+13. [עדכון 1](#עדכון-1)
+14. [עדכון 2](#עדכון-2)
+15. [עדכון 3](#עדכון-3)
    
 ## תיאור כללי
-מחלקת התרומות של בית החולים שיבא – תל השומר אחראית על גיוס וניהול תרומות לתמיכה בפעילות הרפואית, המחקרית והקהילתית של בית החולים. המחלקה פועלת על מנת לחבר בין תורמים פרטיים, ארגונים, ועמותות לבין צרכים שונים של בית החולים, כגון רכישת ציוד רפואי מתקדם, מימון מחקרים חדשניים, שיפור תנאי האשפוז ושירותים נוספים למטופלים. מחלקת התרומות בתל השומר פועלת מתוך מחויבות לרווחת המטופלים ושיפור השירותים הרפואיים, תוך טיפוח קשרים ארוכי טווח עם תורמים ותומכים מכל רחבי העולם.
-הישויות במערכת ניהול התרומות
-- **תרומות (Donations)** – כל תרומה נרשמת במערכת עם פרטים כמו סכום ומועד התרומה ואמצעי התשלום. תרומה יכולה להיות מיועדת לפרוייקט ספציפי או ניתן לפצל אותה בין המחלקות.  
-- **תורמים (Donors)** – אנשים פרטיים, חברות, קרנות ועמותות התורמים לבית החולים. לכל תורם נשמרים פרטי הקשר שלו, אך ניתן לשמור על אנונימיות. ניתן לתרום דרך מגייס ממחלקת התרומות, וניתן לתרום באופן עצמאי. 
-- **אירועים (Events)** – אירועי גיוס כספים והוקרה לתורמים שנערכים על ידי מחלקת התרומות. אירועים אלו מסייעים לגיוס משאבים ותורמים נוספים, ומחזקים את הקשר בין התורמים לבית החולים.
-- **פרויקטים (Projects)** – יוזמות ייחודיות בבית החולים שמקבלות מימון מתרומות, כגון הקמת מחלקות חדשות, מחקרים רפואיים, או תוכניות לשיפור רווחת המטופלים. צוות מחלקת התרומות מגייסים כספים לביצוע הפרויקטים. כל תרומה לפרויקט מיועדת אליו, ולא ניתן לחלק אותה למספר יעדים. 
-- **צוות (Staff)** – אנשי הצוות במחלקת התרומות שאחראים על תפעול המערכת ותקשורת עם תורמים למטרת גיוס כספים למחלקות בית החולים ולפרויקטים מיוחדים כמו הקמת אגף שיקום חדש. לעיתים הם מארגנים אירועי התרמה כדי לגייס תורמים נוספים.
-- **מחלקות (Departments)** – מחלקות בית החולים הנהנות מהתרומות, כגון אונקולוגיה, ילדים, שיקום ועוד. לכל מחלקה יש יעד גיוס תרומות שנתי.
+ **תרומות (Donations)** – כל תרומה נרשמת במערכת עם פרטים כמו סכום ומועד התרומה ואמצעי התשלום. תרומה יכולה להיות מיועדת לפרוייקט ספציפי או ניתן לפצל אותה בין המחלקות.  
+ 
+## שאילתא 1
+![SELECT1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_1.png)
 
-## דיאגרמת ה-ERD
-![ERD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/ERD.png)
+## שאילתא 2
+![SELECT2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_2.png)
 
-## דיאגרמת ה-DSD
-![DSD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/RelationalSchema.png)
+## שאילתא 3
+![SELECT3](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_3_0.png)
+![SELECT3](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_3.png)
 
+## שאילתא 4
+![SELECT4](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_4.png)
 
-## הכנסת נתונים מקבצים
-![csv](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/inset_from_csv.jpg)
+## שאילתא 5
+![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_4_0.png)
+![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_4.png)
 
-## הכנסת נתונים מ-mockaroo
-![mocaroo](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/mockarooFiles/Donations_Mockaroo.jpg)
+## שאילתא 6
+![SELECT6](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_6_0.png)
+![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_6.png)
 
-## הכנסת נתונים עם python
-![python](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/Programming/insert_to_pgadmin_output.jpg)
+## שאילתא 7
+![SELECT7](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא7.png)
 
-## גיבוי נתונים
-![גיבוי](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/backup_image.png)
+## שאילתא 8
+![SELECT8](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_8_0.png)
+![SELECT5](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא_8.png)
 
-## שחזור נתונים
-![שחזור](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/reconstruction_image.png)
+## מחיקה 1
+![DELETE1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב
+
+## מחיקה 2
+![DELETE2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב
+
+## מחיקה 3
+![DELETE3](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב
+
+## עדכון 1
+![UPDATE1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב
+
+## עדכון 2
+![UPDATE2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב
+
+## עדכון 3
+![UPDATE3](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב
