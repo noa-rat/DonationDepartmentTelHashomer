@@ -57,37 +57,56 @@
 ## מחיקה 1
 **לפני**
 ![DELETE11](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_1_לפני.png)
+
 **הרצה**
 ![DELETE12](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_1_הרצה.png)
+
 **אחרי**
 ![DELETE13](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_1_אחרי.png)
 
 ## מחיקה 2
 **לפני**
 ![DELETE21](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_2_לפני.png)
+
 **הרצה**
 ![DELETE22](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/DELETE2_הרצה.png)
+
 **אחרי**
 ![DELETE23](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_2_אחרי.png)
 
 ## מחיקה 3
 **לפני**
 ![DELETE31](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_3_לפני.png)
+
 **הרצה**
 ![DELETE32](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_3_הרצה.png)
+
 **אחרי**
 ![DELETE33](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/דליט_3_אחרי.png)
 
 ## עדכון 1
+**לפני**
 ![UPDATE11](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_1_לפני.png)
+
+**הרצה**
 ![UPDATE12](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_1_הרצה.png)
+
+**לפני**
 ![UPDATE13](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_1_אחרי.png)
 
 ## עדכון 2
+**לפני**
 ![UPDATE21](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_2_לפני.png)
+
+**אחרי**
 ![UPDATE22](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_2_אחרי.png)
 
 ## עדכון 3
+**לפני**
 ![UPDATE31](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_3_לפני.png)
+
+**הרצה**
 ![UPDATE32](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_3_הרצה.png)
+
+**אחרי**
 ![UPDATE33](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_3_אחרי.png)
