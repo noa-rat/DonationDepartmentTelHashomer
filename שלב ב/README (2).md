@@ -15,6 +15,9 @@
 12. [עדכון 1](#עדכון-1)
 13. [עדכון 2](#עדכון-2)
 14. [עדכון 3](#עדכון-3)
+15. [אילוץ 1](#אילוץ-1)
+16. [אילוץ 2](#אילוץ-2)
+17. [אילוץ 3](#אילוץ-3)
  
 ## שאילתא 1
 **תיאור:** תורמים שתרמו למחלקות (ולא לפרויקטים) בהוראת קבע אך הם אינם חברים.
@@ -120,3 +123,31 @@
 
 **אחרי**
 ![UPDATE33](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/עדכון_3_אחרי.png)
+
+## אילוץ 1
+**תיאור:** הוסף אילוץ unique (ערך ייחודי) עבור e_name, e_date, e_location.
+
+**הרצה**
+![DELETE11](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/אילוץ_1_הרצה.png)
+
+**דוגמה לשגיאה**
+![DELETE12](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/אילוץ_1_שגיאה.png)
+
+## אילוץ 2
+**תיאור:** אי אפשר שיהיה לפרוייקט תאריך התחלה יותר מאוחר מתאריך הסיום.
+
+**הרצה**
+![DELETE21](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/אילוץ_2_הרצה.png)
+
+**דוגמה לשגיאה**
+![DELETE22](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/אילוץ_2_שגיאה.png)
+
+
+## אילוץ 3
+**תיאור:** שכר של איש צוות חייב להיות מספר חיובי.
+
+**הרצה**
+![DELETE31](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/אילוץ_3_הרצה.png)
+
+**דוגמה לשגיאה**
+![DELETE32](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/אילוץ_3_שגיאה.png)
