@@ -27,23 +27,23 @@
 - **מחלקות (Departments)** – מחלקות בית החולים הנהנות מהתרומות, כגון אונקולוגיה, ילדים, שיקום ועוד. לכל מחלקה יש יעד גיוס תרומות שנתי.
 
 ## דיאגרמת ה-ERD
-![ERD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/ERD.png)
+![ERD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/ERD.png)
 
 ## דיאגרמת ה-DSD
-![DSD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/RelationalSchema.png)
+![DSD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/RelationalSchema.png)
 
 
 ## הכנסת נתונים מקבצים
-![csv](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/WhatsApp%20Image%202025-03-30%20at%2011.46.19_c11728f2%20(1).jpg)
+![csv](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/WhatsApp%20Image%202025-03-30%20at%2011.46.19_c11728f2%20(1).jpg)
 
 ## הכנסת נתונים מ-mockaroo
-![mocaroo](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/mockarooFiles/Donations_Mockaroo.jpg)
+![mocaroo](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/mockarooFiles/Donations_Mockaroo.jpg)
 
 ## הכנסת נתונים עם python
-![python](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/Programming/insert_to_pgadmin_output.jpg)
+![python](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/Programming/insert_to_pgadmin_output.jpg)
 
 ## גיבוי נתונים
-![גיבוי](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-03-30%20154727.png)
+![גיבוי](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-03-30%20154727.png)
 
 ## שחזור נתונים
-![שחזור](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-03-30%20163032.png)
+![שחזור](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20א/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-03-30%20163032.png)
