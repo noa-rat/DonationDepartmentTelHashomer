@@ -10,6 +10,7 @@ BEGIN
         count_departments := count_departments + 1;
         RAISE NOTICE 'Handling department: %', dept.department_name;
         CALL create_fundraisingEvent_for_department(dept.department_name);
+        COMMIT;
     END LOOP;
 
     IF count_departments = 0 THEN
