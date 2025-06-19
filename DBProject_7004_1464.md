@@ -105,7 +105,7 @@
 
 ## שאילתא 7
 **תיאור:** רשימת תורמים שתרמו יותר מ-60% מהכספים שגויסו למחלקה ספציפית.
-![SELECT7](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא7.png)
+![SELECT7](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/שאילתא7_new.png)
 
 ## שאילתא 8
 **תיאור:** מציג לכל אירוע לאיזו מחלקה או פרויקט הוא התרים הכי הרבה, כולל הסכום.
