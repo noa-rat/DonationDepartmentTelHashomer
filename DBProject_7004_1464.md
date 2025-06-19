@@ -290,6 +290,7 @@
 ![view2select2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view2select2.png)
 
 # שלב ד
+# תכניות
 
 ## תוכן עניינים
 1. [תוכנית ראשית 1](#תוכנית_ראשית_1)
