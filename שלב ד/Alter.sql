@@ -88,6 +88,19 @@ SELECT setval('project_p_id_seq', 10000, true);
 ALTER TABLE project
 ALTER COLUMN p_id SET DEFAULT nextval('project_p_id_seq');
 
+alter table mother_old
+drop constraint mother_doctor_id_fkey;
+
+drop table baby_id_map;
+drop table baby_old;
+drop table doctor_old;
+drop table donor_id_map_final;
+drop table donor_old;
+drop table fundraiser_old;
+drop table mother_id_map;
+drop table mother_old;
+drop table nurse_old;
+drop table s_id_map;
 
 
 
