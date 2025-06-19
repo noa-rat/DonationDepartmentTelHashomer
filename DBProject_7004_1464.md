@@ -289,3 +289,515 @@
 תיאור: השאילתא מחזירה את כל היולדות המטופלות ע"י כל רופא.
 ![view2select2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view2select2.png)
 
+# שלב ד
+
+## תוכן עניינים
+1. [תוכנית ראשית 1](#תוכנית_ראשית_1)
+2. [תוכנית ראשית 2](#תוכנית_ראשית_2)
+3. [טריגר 1א](#טריגר_1א)
+4. [טריגר 1ב](טריגר_1ב)
+5. [טריגר 2](טריגר_2)
+
+## תוכנית ראשית 1
+**תיאור מילולי:** 
+הקוד מקבל את המידע הבא על כל חדר בבית החולים:
+1. אם יש בו מטופלים, האם הוקצתה לו אחות?
+2. מהי התפוסה המקסימלית ומהי התפוסה הנוכחית?
+לאחר מכן, אם יש חדר עם דיירים שאין לו אחות שהוקצתה לו, יש להקצות אחות אם קיימת אחת זמינה. בנוסף, אם יש חדר שיש בו יותר מטופלים מהמקסימום, יש להקצות מטופלים מיותרים לחדרים אחרים בבמחלקה אם יש מקום פנוי.
+
+**הקוד:**
+```sql
+DO $$
+DECLARE
+    room_cur REFCURSOR;
+    rec RECORD;
+BEGIN
+    -- Call function to get the refcursor
+    room_cur := get_room_occupancy_info();
+
+    -- Fetch all from the cursor and print room info
+    LOOP
+        FETCH room_cur INTO rec;
+        EXIT WHEN NOT FOUND;
+        RAISE NOTICE 'Room % in Dept %: Capacity=%, Occupancy=%, Nurse Assigned=%',
+            rec.room_number, rec.d_name, rec.capacity, rec.current_occupancy, rec.nurse_assigned;
+    END LOOP;
+    CLOSE room_cur;
+
+    -- Call the procedure to assign nurses and move patients
+    CALL assign_nurses_to_unassigned_rooms();
+
+    RAISE NOTICE 'Nurses assigned and patients shifted if needed.';
+END;
+$$ LANGUAGE plpgsql;
+```
+
+
+**צילום מסך לפני הרצת התוכנית:**
+
+![before_changes2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/before_changes1.png)
+
+**צילום מסך של הרצת התוכנית:**
+
+![run_main_program2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/run_main_program1.png)
+
+
+**צילום מסך אחרי הרצת התוכנית:**
+
+![after_changes2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/after_changes1.png)
+
+### הפונקציה get_room_occupancy_info():
+
+**תיאור מילולי:** 
+
+פונקציה שמחזירה את המידע הנוגע לחדר מסוים: המחלקה שלו, תפוסה מקסימלית, תפוסה נוכחית, ו-true/false אם מוקצית לו אחות
+
+**הקוד:** 
+
+```sql
+CREATE OR REPLACE FUNCTION get_room_occupancy_info()
+RETURNS REFCURSOR AS $$
+DECLARE
+    ref refcursor := 'room_cursor';
+BEGIN
+    OPEN ref FOR
+    SELECT 
+        r.room_number,
+        r.d_name,
+        r.capacity,
+        COUNT(p.patient_id) AS current_occupancy,
+        CASE 
+            WHEN EXISTS (
+                SELECT 1 FROM nurse_room nr 
+                WHERE nr.room_number = r.room_number AND nr.d_name = r.d_name
+            )
+            THEN TRUE ELSE FALSE 
+        END AS nurse_assigned
+    FROM room r
+    LEFT JOIN patient p 
+        ON p.room_number = r.room_number AND p.d_name = r.d_name
+    GROUP BY r.room_number, r.d_name, r.capacity;
+
+    RETURN ref;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+
+### הפרוצדורה assign_nurses_to_unassigned_rooms():
+
+**תיאור מילולי:** 
+
+פרוצדורה לארגון החדרים: אם מספר הדיירים הנוכחי גדול מהמספר המקסימלי, יש להחליף חדרים אם יש מקום פנוי במחלקה. אם אין אחות שהוקצתה לחדר, יש להקצות אותה במידת האפשר.
+
+**הקוד:**
+
+```sql
+CREATE OR REPLACE PROCEDURE assign_nurses_to_unassigned_rooms()
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    cur_room CURSOR FOR
+        SELECT r.room_number, r.d_name, r.capacity, COUNT(p.patient_id) AS occupancy
+        FROM room r
+        LEFT JOIN patient p ON r.room_number = p.room_number AND r.d_name = p.d_name
+        GROUP BY r.room_number, r.d_name, r.capacity;
+
+    rec_room RECORD;
+    nurse_id INT;
+    extra_patients INT;
+    cur_patient RECORD;
+    alt_room INT;
+BEGIN
+    OPEN cur_room;
+    LOOP
+        FETCH cur_room INTO rec_room;
+        EXIT WHEN NOT FOUND;
+
+        -- Assign a nurse if none is assigned yet
+        IF NOT EXISTS (
+            SELECT 1 FROM nurse_room nr
+            WHERE nr.room_number = rec_room.room_number AND nr.d_name = rec_room.d_name
+        ) THEN
+            SELECT employee_id INTO nurse_id
+            FROM nurse
+            WHERE d_name = rec_room.d_name
+            LIMIT 1;
+
+            IF nurse_id IS NOT NULL THEN
+                INSERT INTO nurse_room(nurse_id, room_number, d_name)
+                VALUES (nurse_id, rec_room.room_number, rec_room.d_name);
+            ELSE
+                RAISE NOTICE 'No nurse available for room % in department %.',
+                    rec_room.room_number, rec_room.d_name;
+            END IF;
+        END IF;
+
+        -- Check for over-occupancy
+        IF rec_room.occupancy > rec_room.capacity THEN
+            extra_patients := rec_room.occupancy - rec_room.capacity;
+
+            -- Fetch extra patients to move
+            FOR cur_patient IN
+                SELECT patient_id, person_id FROM patient
+                WHERE room_number = rec_room.room_number AND d_name = rec_room.d_name
+                ORDER BY admission_date DESC
+                LIMIT extra_patients
+            LOOP
+                -- Find another room in same department with available space
+                SELECT available_room.room_number INTO alt_room
+                FROM (
+                    SELECT r.room_number, r.capacity, COUNT(p.patient_id) AS current_occupancy
+                    FROM room r
+                    LEFT JOIN patient p ON r.room_number = p.room_number AND r.d_name = p.d_name
+                    WHERE r.d_name = rec_room.d_name
+                      AND r.room_number != rec_room.room_number
+                    GROUP BY r.room_number, r.capacity
+                    HAVING COUNT(p.patient_id) < r.capacity
+                    ORDER BY r.capacity - COUNT(p.patient_id) DESC
+                    LIMIT 1
+                ) AS available_room;
+
+                IF alt_room.room_number IS NOT NULL THEN
+                    -- Move patient to alternative room
+                    UPDATE patient
+                    SET room_number = alt_room.room_number
+                    WHERE patient_id = cur_patient.patient_id;
+
+                    RAISE NOTICE 'Moved patient % to room % in department %.',
+                        cur_patient.patient_id, alt_room.room_number, rec_room.d_name;
+                ELSE
+                    RAISE NOTICE 'No alternative room with space found for patient % in department %.',
+                        cur_patient.patient_id, rec_room.d_name;
+                END IF;
+            END LOOP;
+        END IF;
+    END LOOP;
+    CLOSE cur_room;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        RAISE NOTICE 'An error occurred: %', SQLERRM;
+END;
+$$;
+```
+
+
+## תוכנית ראשית 2
+**תיאור מילולי:** התוכנית מפעילה פונקציה שמחזירה את כל המחלקות שעוד לא גייסו מספיק תרומות כדי לעמוד ביעד התקציב שלהן, ואז מפעילה פרוצדורה בלולאה על כל אחת מהמחלקות שמוסיפה אירוע חדש לגיוס תרומות לאותה מחלקה ומתאמת מגייס תרומות פנוי שיארגן את האירוע.
+
+**הקוד**
+
+```sql
+DO $$
+DECLARE
+    dept RECORD;
+    count_departments INT := 0;
+BEGIN
+    RAISE NOTICE 'Starting donation check and event creation...';
+
+    FOR dept IN SELECT * FROM get_departments_below_budget() LOOP
+        count_departments := count_departments + 1;
+        RAISE NOTICE 'Handling department: %', dept.department_name;
+        CALL create_fundraisingEvent_for_department(dept.department_name);
+        COMMIT;
+    END LOOP;
+
+    IF count_departments = 0 THEN
+        RAISE NOTICE 'All departments have reached their fundraising goals.';
+    ELSE
+        RAISE NOTICE 'Processed % departments with unmet fundraising goals.', count_departments;
+    END IF;
+END $$;
+```
+
+
+**צילום מסך לפני הרצת התוכנית:**
+
+![before_changes1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/before_changes2.png)
+
+**צילום מסך של הרצת התוכנית:**
+
+![run_main_program1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/run_main_program2.png)
+
+
+**צילום מסך אחרי הרצת התוכנית:**
+
+![after_changes1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/after_changes2.png)
+
+### הפונקציה get_departments_below_budget():
+
+**תיאור מילולי:** 
+
+להחזיר את כל המחלקות שאין להן מספיק כספי תרומות כדי לעמוד בתקציב השנתי הנדרש להן לפעול.
+
+**הקוד:** 
+
+```sql
+CREATE OR REPLACE FUNCTION get_departments_below_budget()
+RETURNS TABLE (
+    department_name VARCHAR,
+    total_donations NUMERIC,
+    required_budget NUMERIC
+) AS $$
+DECLARE
+    rec_dept RECORD;
+    total_donations NUMERIC;
+BEGIN
+    FOR rec_dept IN SELECT d_name, d_yearly_budget, d_funds_allocated FROM department LOOP
+
+        -- Calculate total donations for current year
+        SELECT COALESCE(SUM(d.d_amount), 0)
+        INTO total_donations
+        FROM donation d
+        JOIN towards t ON d.donation_id = t.donation_id AND d.donor_id = t.donor_id
+        WHERE t.d_name = rec_dept.d_name
+          AND EXTRACT(YEAR FROM d.d_date) = EXTRACT(YEAR FROM CURRENT_DATE);
+
+        -- Return row if donations are below expected budget
+        IF total_donations < (rec_dept.d_yearly_budget - rec_dept.d_funds_allocated) THEN
+            department_name := rec_dept.d_name;
+            required_budget := rec_dept.d_yearly_budget - rec_dept.d_funds_allocated;
+            get_departments_below_budget.total_donations := total_donations;
+            RETURN NEXT;
+        END IF;
+    END LOOP;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+### הפרוצדורה create_fundraisingEvent_for_department():
+
+**תיאור מילולי:** 
+
+עבור כל המחלקות שלא קיבלו מספיק כספים באמצעות תרומות בשנה הקלנדרית הזו כדי לפעול, יש ליצור אירוע גיוס כספים למען המחלקה ולמנות גיוס תרומות לארגון.
+
+**הקוד:**
+
+```sql
+CREATE OR REPLACE PROCEDURE create_fundraisingEvent_for_department(dept_name VARCHAR)
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    new_event_id INT;
+    fundraiser_id INT;
+    proposed_date DATE := CURRENT_DATE + INTERVAL '1 month';
+    proposed_location VARCHAR;
+BEGIN
+    RAISE NOTICE 'Handling department: %', dept_name;
+
+    -- נסה למצוא תאריך ומיקום פנויים בלולאה
+    LOOP
+        -- מצא מיקום פנוי בחודש הבא
+        SELECT l.location_name INTO proposed_location
+        FROM (
+            SELECT DISTINCT e_location AS location_name
+            FROM fundraisingEvent
+            WHERE e_location IS NOT NULL
+        ) l
+        WHERE NOT EXISTS (
+            SELECT 1
+            FROM fundraisingEvent fe
+            WHERE fe.e_date = proposed_date
+              AND fe.e_location = l.location_name
+        )
+        LIMIT 1;
+
+        -- אם נמצא מיקום פנוי – צא מהלולאה
+        IF proposed_location IS NOT NULL THEN
+            EXIT;
+        END IF;
+
+        -- אחרת – עבור לשבוע הבא
+        proposed_date := proposed_date + INTERVAL '7 day';
+
+        -- תנאי עצירה: לא לחפש מעבר לחצי שנה קדימה
+        IF proposed_date > CURRENT_DATE + INTERVAL '6 month' THEN
+            RAISE EXCEPTION 'No available location for department % within a year', dept_name;
+        END IF;
+    END LOOP;
+
+    -- צור את האירוע
+    INSERT INTO fundraisingEvent (e_date, e_name, e_location)
+    VALUES (proposed_date, 'Auto-generated event for department ' || dept_name, proposed_location)
+    RETURNING e_id INTO new_event_id;
+
+    -- מצא מגייס שאינו מארגן אירוע אחר
+    SELECT f.employee_id INTO fundraiser_id
+    FROM fundraiser f
+    WHERE NOT EXISTS (
+        SELECT 1 FROM organizes o
+        WHERE o.fundraiser_id = f.employee_id
+    )
+    LIMIT 1;
+
+    -- אם לא נמצא מגייס
+    IF fundraiser_id IS NULL THEN
+        RAISE EXCEPTION 'No available fundraiser to assign to department %', dept_name;
+    END IF;
+
+    -- קישור המגייס לארגון האירוע
+    INSERT INTO organizes (fundraiser_id, e_id)
+    VALUES (fundraiser_id, new_event_id);
+
+    RAISE NOTICE 'Created event % on % at % for department %, assigned to fundraiser %',
+        new_event_id, proposed_date, proposed_location, dept_name, fundraiser_id;
+END;
+$$;
+```
+
+
+
+# Triggers
+## טריגר 1א
+**תיאור מילולי:** 
+
+כאשר מוסיפים מטופל, מקצה לו רופא באופן אוטומטי
+
+**הקוד:** 
+
+```sql
+CREATE OR REPLACE FUNCTION assign_doctor_to_patient()
+RETURNS TRIGGER AS $$
+DECLARE
+    assigned_doctor_id INT;
+BEGIN
+    SELECT d.employee_id
+    INTO assigned_doctor_id
+    FROM doctor d
+    JOIN maximum_amount_of_patients m ON d.title = m.type_of_doctor
+    WHERE d.d_name = NEW.d_name
+    AND (
+        SELECT COUNT(*)
+        FROM patient p
+        WHERE p.doctor_id = d.employee_id
+          AND (p.release_date IS NULL OR p.release_date >= CURRENT_DATE)
+    ) < m.max_patients
+    LIMIT 1;
+
+    IF assigned_doctor_id IS NULL THEN
+        RAISE EXCEPTION 'No doctor available in department % with available capacity.', NEW.d_name;
+    END IF;
+
+    NEW.doctor_id := assigned_doctor_id;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_assign_doctor
+BEFORE INSERT ON patient
+FOR EACH ROW
+EXECUTE FUNCTION assign_doctor_to_patient();
+
+CREATE TRIGGER trg_assign_doctor_mother
+BEFORE INSERT ON mother
+FOR EACH ROW
+EXECUTE FUNCTION assign_doctor_to_patient();
+
+CREATE TRIGGER trg_assign_doctor_baby
+BEFORE INSERT ON baby
+FOR EACH ROW
+EXECUTE FUNCTION assign_doctor_to_patient();
+```
+
+## טריגר 1ב
+**תיאור מילולי:** 
+
+כאשר מוסיפים מטופל, מקצה לו חדר באופן אוטומטי
+
+**הקוד:** 
+
+
+```sql
+CREATE OR REPLACE FUNCTION assign_room_to_patient()
+RETURNS TRIGGER AS $$
+DECLARE
+    assigned_room_number INT;
+BEGIN
+    SELECT r.room_number
+    INTO assigned_room_number
+    FROM room r
+    WHERE r.d_name = NEW.d_name
+    AND (
+        SELECT COUNT(*)
+        FROM patient p
+        WHERE p.room_number = r.room_number
+          AND (p.release_date IS NULL OR p.release_date >= CURRENT_DATE)
+    ) < r.capacity
+    LIMIT 1;
+
+    IF assigned_room_number IS NULL THEN
+        RAISE EXCEPTION 'No room available in department % with available capacity.', NEW.d_name;
+    END IF;
+
+    NEW.room_number := assigned_room_number;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_assign_room_baby
+BEFORE INSERT ON baby
+FOR EACH ROW
+EXECUTE FUNCTION assign_room_to_patient();
+
+CREATE TRIGGER trg_assign_room_mother
+BEFORE INSERT ON mother
+FOR EACH ROW
+EXECUTE FUNCTION assign_room_to_patient();
+
+CREATE TRIGGER trg_assign_room_mother
+BEFORE INSERT ON mother
+FOR EACH ROW
+EXECUTE FUNCTION assign_room_to_patient();
+```
+
+**צילום מסך של הוספת מטופל בלי רופא וחדר:**
+
+![trigger1_insert](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/trigger1_insert.png)
+
+**צילום מסך של המטופל שנוסף עם רופא וחדר:**
+
+![trigger1_after](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/trigger1_after.png)
+
+
+## טריגר 2
+**תיאור מילולי:** 
+
+כאשר מוסיפים מרשם (שכלל מטופל ותרופה), מקטינים את מלאי התרופה
+
+**הקוד:**
+
+```sql
+CREATE OR REPLACE FUNCTION decrease_stock()
+RETURNS TRIGGER AS $$
+BEGIN
+    UPDATE medicine
+    SET stock = stock - 1
+    WHERE medicine_id = NEW.medicine_id;
+
+    RETURN NEW; -- You must return NEW in a BEFORE or AFTER INSERT trigger
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER trg_decrease_stock
+BEFORE INSERT ON prescription
+FOR EACH ROW
+EXECUTE FUNCTION decrease_stock();
+```
+
+**צילום מסך של התרופה לפני שהוספנו עוד מרשם:**
+
+![trigger2_before](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/trigger2_before.png)
+
+**צילום מסך של המרשם שהוספנו:**
+
+![trigger2_insert](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/trigger2_insert.png)
+
+**צילום מסך של התרופה אחרי שהוספנו עוד מרשם:**
+
+![trigger2_after](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/trigger2_after.png)
+
+
+
