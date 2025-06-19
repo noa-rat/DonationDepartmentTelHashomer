@@ -217,3 +217,75 @@
 ![ROLLBACKCOMMIT2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/RollbackCommit2.png)
 
 ![ROLLBACKCOMMIT3](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ב/RollbackCommit3.png)
+
+
+# שלב ג
+# DonationDepartmentTelHshomer
+## תוכן עניינים
+1. [תרשימים](#תרשימים)
+2. [החלטות האינטגרציה](#החלטות_האינטגרציה)
+4. [תהליך האינטגרציה](#תהליך_האינטגרציה)
+5. [מבטים ושאילתות](#מבטים_ושאילתות)
+
+## תרשימים
+**תרשים ה-DSD של מחלקת יולדות:**
+![DSD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/DSD.png)
+
+**תרשים ה-ERD של מחלקת יולדות:**
+![ERD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/ERD.png)
+
+**תרשים ה-DSD המשותף:**
+![IntegratedDSD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/IntegratedDSD.png)
+
+**תרשים ה-ERD המשותף:**
+![IntegratedERD](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/IntegratedERD.png)
+
+## החלטות האינטגרציה
+תחילה יצירנו ישות חדשה בשם person שמכילה מידע כללי על אנשים בעולם.
+
+הוספנו 2 ישויות חדשות שיורשות מ-person, האחת היא staffMember שמייצגת כלל אנשי הצוות שעובדים בבית החולים, והשניה היא patient שמייצגת את כלל המטופלים בבית החולים. בנוסף הפכנו את donor לישות יורשת מ-person.
+
+הפכנו את doctor ו-nurse לישויות יורשות מ-staffMember. את הישות staffMember המקורית שלנו שינינו ל-fundraiser והפכנו גם אותה לישות יורשת מהישות staffMember החדשה.
+
+כמו כן, הפכנו את mother ו-baby לישויות יורשות מ-patient.
+בבסיס נתונים המקורי של מחלקת יולדות, היה מפתח זר של doctor_id שהיה אחד מהתכונות של mother. הפכנו את המפתח הזר הזה להיות תכונה של הישות patient, כלומר לכלל המטופלים יש רופא מטפל, כולל baby.
+בנוסף, בבסיס נתונים המקורי של מחלקת יולדות, היה מפתח זר של room_number שהיה אחד מהתכונות של mother. הפכנו את המפתח הזר הזה להיות תכונה של הישות patient, כלומר לכלל המטופלים יש חדר לשהות בו. 
+
+הוספנו מפתח זר של d_name (של הישות מחלקה) ל-staffMember כדי שנוכל לדעת באיזה מחלקה כל איש צוות עובד (כמובן בחרנו להגדיר את המחלקה של כל fundraiser להיות Donations Department).
+וכן הוספנו מפתח זר של d_name (של הישות מחלקה) ל-room כדי שנוכל לדעת באיזה מחלקה נמצא כל חדר, והפכנו את room להיות ישות חלשה של department כי לא יתכן חדר שלא נמצא באחת המחלקות.
+
+הוספנו תכונה אופציונלית לישות towards (הישות שמקשרת בין donation ו-department, כלומר לאילו מחלקות מיועדת התרומה) של המפתח של room שהוא (room_number, d_name) שיורה האם התרומה מיועדת לחדר מסוים (לבנייתו או לשיפוצו).
+
+## תהליך האינטגרציה
+קודם כל הוספנו את הטבלאות החדשות שלא היו בשני הפרוייקטים.
+
+את טבלאות הקיימות שרצינו להפוך להיות טבלאות יורשות יצרנו מחדש, כי אי אפשר ב-pgadmin לכתוב פקודה להוסיף את הירושה, אלא צריך ליצור מחדש. העברנו את כל הנתונים מהטבלאות הישנות לטבלאות החדשות, וכמובן הוספנו עמודות חדשות אם היה צורך.
+
+בהעברה, כל ה-id-ים הקיימים הפכו להיות ה-person_id וכל ה-id-ים החדשים (employee_id, patient_id) נוצרו אוטומטית עם sequence. כאשר העברנו את הנתונים היינו צריכות לפעמים לשנות את ה-person_id אם היו חפיפות בין טבלאות יורשות. במידה וזה קרה, יצרנו טבלת עזר לעשות מיפוי בין ה-person_id הישן וה-person_id החדש (שנבחר על ידי sequence). אחרי שיצרנו את טבלאות המיפוי, שנינו את הperson_id והמפתחות הזרים בהתאם.
+
+רצינו שלכל patient יהיה את האופציה של medicine כי כל מטופל יכול לקבל תרופה ולא רק יולדות, לכן היה צריך להחליף את המפתח הזר ב-prescription מ-mother_id ל-patient_id. זה גרם לבעיה, בגלל שלא יכולנו לשים את המפתח הזר של טבלת האב, לכן הוספנו טבלת עזר שמכילה את כל ה-patient_id-ים, כתבנו פונקציות הוספה ומחיקה של patient_id מהטבלה הזו, ויצרנו trigger-ים ביצירה ובמחיקה של mother או baby לקרוא לפונקציות האלו. לאחר מכן עשינו שהמפתח הזר של prescription יפנה לאותה טבלת העזר.
+
+לבסוף, דאגנו שכל המפתחות זרים יפנו לישות הנכונה.    
+
+## מבטים ושאילתות
+**תיאור ה-view מצד מחלקת התרומות:** ה-view מכיל את רוב המידע עבור כל תרומה: נתוני התרומה, התורם, המתרים, יעד התרומה ועוד.
+
+**שליפת נתונים מה-view:**
+![view1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view1.png)
+**שאילתא 1:**
+תיאור: השאילתא מחזירה את סכום התרומות של כל תורם.
+![view1select1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view1select1.png)
+**שאילתא 2:**
+תיאור: השאילתא מחזירה את מספר המשתתפים בכל אירוע התרמה.
+![view1select2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view1select2.png)
+**תיאור ה-view מצד מחלקת היולדות:** ה-view מכיל את המידע הבסיסי עבור כלל ה-persons שממחלקת היולדות, סוג ה-person ומפתחות זרים.
+
+**שליפת נתונים מה-view:**
+![view2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view2.png)
+**שאילתא 1:**
+תיאור: השאילתא מחזירה את כל התינוקות של כל יולדת.
+![view2select1](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view2select1.png)
+**שאילתא 2:**
+תיאור: השאילתא מחזירה את כל היולדות המטופלות ע"י כל רופא.
+![view2select2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ג/view2select2.png)
+
