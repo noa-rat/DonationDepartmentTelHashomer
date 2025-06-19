@@ -4,8 +4,8 @@ def connect_to_db():
     try:
         conn = psycopg2.connect(
             dbname="IntegratedDonationsMaternity",
-            user="adina",
-            password="almond890",
+            user="<username>",
+            password="<password>",
             host="localhost",
             port="5432"
         )
