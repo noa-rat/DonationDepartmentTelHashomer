@@ -1,10 +1,13 @@
-# DonationDepartmentTelHashomer
+# Donations Department + Maternity Ward Tel HaShomer Sheba Hospital
 ## שער
 **מגישות:** עדינה לב ונעה רט
 
 **מערכת:** בית החולים שיבא – תל השומר
 
-**יחידה:** מחלקת התרומות
+**יחידה:** מחלקת התרומות ובהמך מחלקת יולדות
+
+
+## שלב א
 
 ## תוכן העניינים
 1. [תיאור כללי](#תיאור-כללי)
