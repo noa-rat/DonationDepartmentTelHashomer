@@ -29,18 +29,26 @@
 
 העמוד הראשי:
 
+![main](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/main.png)
 
 עמוד המעבר לעדכון טבלאות:
 
+![manage](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/manage.png)
 
 אחד מעמודי ה-CRUD:
 
+![donor](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/donor.png)
 
 ביצוע create לדוגמה:
 
+![create](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/create.png)
 
 הפעלת שאילתא:
 
+![select](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/select.png)
 
 הפעלת הפונקציה + פרוצדורה:
 
+![auto](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/auto.png)
+
+![before_changes2](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ד/before_changes1.png)
