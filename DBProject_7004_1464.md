@@ -847,6 +847,18 @@ EXECUTE FUNCTION decrease_stock();
 
 ![create](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ה/create.png)
 
+ביצוע delete לדוגמה:
+
+![delete](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ה/delete.png)
+
+ביצוע update לדוגמה:
+
+![update](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ה/update.png)
+
+ביצוע select לדוגמה:
+
+![select](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ה/select2.png)
+
 הפעלת שאילתא:
 
 ![select](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ה/select.png)
