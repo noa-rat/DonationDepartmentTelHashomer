@@ -53,7 +53,7 @@
 
 ביצוע select לדוגמה:
 
-![select](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ה/select1.png)
+![select](https://raw.githubusercontent.com/noa-rat/DonationDepartmentTelHashomer/main/שלב%20ה/select2.png)
 
 הפעלת שאילתא:
 
